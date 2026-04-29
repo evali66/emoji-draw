@@ -10,14 +10,15 @@
       let x = nn.mouseX
       let y = nn.mouseY
       let hue = nn.random(360)
-      nn.create('img')
-        .set('src',"city.gif")
+      // nn.create('img')
+        //.set('src',"city.gif")
+        nn.create('div')
         .content('hello😋')
         .css('color', 'pink')
         .css('user-select','none')
         .hueRotate(hue)
         .position(x, y)
-        .scale(0.5)
+        .scale(3)
         .rotate(hue)
         .addTo('body')
 
